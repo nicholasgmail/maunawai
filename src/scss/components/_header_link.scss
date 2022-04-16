@@ -1,0 +1,38 @@
+
+.navbar {
+  .pac_man {
+    &__link {
+      &::before {
+        content: url("../images/pacman.webp");
+        position: absolute;
+      }
+
+      @include media-breakpoint-down(md) {
+        &::before {
+          left: 0%;
+        }
+      }
+      @include media-breakpoint-up(md) {
+        &::before {
+          left: 2%;
+        }
+      }
+    }
+  }
+
+  .navbar-nav {
+    .active {
+      background-color: $light;
+      color: $secondary;
+    }
+  }
+
+  .nav-link {
+    &_hover {
+      &:hover {
+        background-color: $light;
+        color: $secondary;
+      }
+    }
+  }
+}
