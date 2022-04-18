@@ -1,12 +1,10 @@
 /* $rfs-base-font-size: 1.15rem; */
+
 /* $slick-loader-path: "../../assets/images/"; */
+
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
-@media (max-width: 575.98px) {
-  html {
-    font-size: 12px;
-  }
-}
 
 .body_image {
   position: relative;
@@ -23,13 +21,6 @@
   top: 5%;
   right: 0;
   z-index: 1;
-}
-
-@media (max-width: 575.98px) {
-  .body_image::before {
-    z-index: -1;
-    opacity: .2;
-  }
 }
 
 .ff_anton {
@@ -179,6 +170,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  z-index: 800;
 }
 
 .btn-image::after {
@@ -218,21 +210,10 @@
     transform: translate(-150%) scale(0.5);
   }
 }*/
+
 .navbar .pac_man__link::before {
   content: url("../images/pacman.webp");
   position: absolute;
-}
-
-@media (max-width: 767.98px) {
-  .navbar .pac_man__link::before {
-    left: 0%;
-  }
-}
-
-@media (min-width: 768px) {
-  .navbar .pac_man__link::before {
-    left: 2%;
-  }
 }
 
 .navbar .navbar-nav .active {
@@ -331,4 +312,54 @@
 
 .footer .logo-position {
   top: -4.3125rem;
+}
+
+@media (min-width: 768px) {
+  .navbar .pac_man__link::before {
+    left: 2%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .navbar .pac_man__link::before {
+    left: 0%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  html {
+    font-size: 12px;
+  }
+
+  .body_image::before {
+    z-index: -1;
+    opacity: .2;
+  }
+}
+@supports (-webkit-appearance:none){
+
+}
+
+ @media (min-width: 768px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 767.98px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 575.98px){
+
+@supports (-webkit-appearance:none){
+
+}
+
 }

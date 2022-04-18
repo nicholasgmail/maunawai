@@ -11,9 +11,9 @@ export const purgecss = async () => {
                 })
             ))
             .pipe(purgeCssMin({
-                content: ['dist/*.html']
+                content: ['docs/*.html']
             }))
-            .pipe(app.gulp.dest('dist/assets/css'));
+            .pipe(app.gulp.dest(app.path.build.css));
     } catch (error) {
         throw new Error(`purge css ` + error);
     }
